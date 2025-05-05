@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="Books/logo.jpg" alt="Logo" width="40" height="40" class="me-2">BookStore
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html"><i class="fas fa-book"></i> Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="orders.html"><i class="fas fa-box"></i> Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="homepage.html#contact"><i class="fas fa-envelope"></i> Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="heroCarousel" class="carousel slide carousel-fade hero-section" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-inner">
+          <div class="carousel-item active hero-slide" style="background-image: url('bookstore_background1.jpg');">
+              <div class="hero-overlay">
+                  <h1>Find Your Next Favorite Book</h1>
+                  <p>Dive into thousands of titles across all genres</p>
+                  <a href="products.html" class="btn btn-primary btn-lg shadow">Browse Books</a>
+              </div>
+          </div>
+          <div class="carousel-item hero-slide" style="background-image: url('bookstore_background2.jpg');">
+           <div class="hero-overlay">
+               <h1>Discover New Releases</h1>
+               <p>Explore the latest bestsellers and timeless classics</p>
+               <a href="products.html" class="btn btn-primary btn-lg shadow">Browse Books</a>
+           </div>
+       </div>
+       <div class="carousel-item hero-slide" style="background-image: url('bookstore_background3.jpg');">
+           <div class="hero-overlay">
+               <h1>Join Our Reading Community</h1>
+               <p>Read, review, and connect with fellow book lovers</p>
+               <a href="products.html" class="btn btn-primary btn-lg shadow">Browse Books</a>
+           </div>
+       </div>
+   </div>
+   <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+ </button>
+ <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+ </button>
+</section>
+
+<section class="feature-section container text-center">
+  <h2 class="mb-4">Why Shop With Us?</h2>
+  <div class="row g-4">
+      <div class="col-md-4">
+          <i class="fas fa-shipping-fast fa-3x mb-3 text-primary"></i>
+          <h5>Fast Delivery</h5>
+          <p>Get your favorite books delivered quickly to your doorstep.</p>
+      </div>
+      <div class="col-md-4">
+          <i class="fas fa-book-reader fa-3x mb-3 text-1uccess"></i>
+          <h5>Wide Selection</h5>
+          <p>Explore books from a vast collection of genres and authors.</p>
+      </div>
+      <div class="col-md-4">
+          <i class="fas fa-tags fa-3x mb-3 text-warning"></i>
+          <h5>Great Deals</h5>
+          <p>Enjoy amazing discounts and offers on bestsellers and new arrivals.</p>
+      </div>
+  </div>
+</section>
+
+<section id="products" class="container my-5">
+  <h2 class="text-center mb-4">Bestsellers</h2>
+  <div class="row g-4">
+      <div class="col-md-2">
+          <div class="card ">
+              <img src="Books/when-the-moon-hits-your-eye.jpg" class="card-img-top" alt="Book 1">
+              <div class="card-body text-center">
+                  <h5 class="card-title">The Great Adventure</h5>
+                  <p class="card-text text-muted">By John Doe</p>
+                  <a href="#cart" class="btn btn-custom-add  btn-sm ">Add to Cart</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-2">
+       <div class="card ">
+           <img src="Books/fear-for-her-life.jpg" class="card-img-top" alt="Book 2">
+           <div class="card-body text-center">
+               <h5 class="card-title">Fear for Her<br>Life</h5>
+               <p class="card-text text-muted">By D.K Hood</p>
+               <a href="#cart" class="btn btn-custom-add btn-sm ">Add to Cart</a>
+           </div>
+       </div>
+   </div>
+   <div class="col-md-2">
+       <div class="card ">
+           <img src="Books/free-falling-in-love.jpg" class="card-img-top" alt="Book 3">
+           <div class="card-body text-center">
+               <h5 class="card-title">Free Falling In Love</h5>
+               <p class="card-text text-muted">By Ava Blackstone</p>
+               <a href="#cart" class="btn btn-custom-add btn-sm ">Add to Cart</a>
+           </div>
+       </div>
+   </div>
+   <div class="col-md-2">
+       <div class="card ">
+           <img src="Books/the-song-of-the-blue-bottle-tree.jpg" class="card-img-top" alt="Book 3">
+           <div class="card-body text-center">
+               <h5 class="card-title">The Song of the Blue Bottle Tree</h5>
+               <p class="card-text text-muted">By India Hayford</p>
+               <a href="#cart" class="btn btn-custom-add  btn-sm ">Add to Cart</a>
+           </div>
+       </div>
+   </div>
+   <div class="col-md-2">
+       <div class="card ">
+           <img src="Books/summer-in-the-city-31.jpg" class="card-img-top" alt="Book 3">
+           <div class="card-body text-center">
+               <h5 class="card-title">Summer in the<br> City</h5>
+               <p class="card-text text-muted">By Alex Aster</p>
+               <a href="#cart" class="btn btn-custom-add  btn-sm">Add to Cart</a>
+           </div>
+       </div>
+   </div>
+   <div class="col-md-2">
+       <div class="card ">
+           <img src="Books/careless-people-7.jpg" class="card-img-top" alt="Book 3">
+           <div class="card-body text-center">
+               <h5 class="card-title">Careless People</h5>
+               <p class="card-text text-muted">By Sarah Wynn-Williams</p>
+               <a href="#cart" class="btn btn-custom-add btn-sm ">Add to Cart</a>
+           </div>
+       </div>
+   </div>
+</div>
+</section>
+
+<section class="testimonial-section container py-5">
+  <h2 class="text-center mb-4">What Our Readers Say</h2>
+  <div class="row g-4">
+      <div class="col-md-4">
+          <div class="card p-3 shadow-sm">
+              <div class="d-flex align-items-center mb-3">
+                  <i class="fas fa-user-circle fa-2x text-primary me-3"></i>
+                  <h6 class="mb-0">Emily R.</h6>
+              </div>
+              <p>"This bookstore has the best collection and amazing deals! Highly recommended."</p>
+          </div>
+      </div>
+      <div class="col-md-4">
+       <div class="card p-3 shadow-sm">
+           <div class="d-flex align-items-center mb-3">
+               <i class="fas fa-user-circle fa-2x text-success me-3"></i>
+               <h6 class="mb-0">Michael S.</h6>
+           </div>
+           <p>"Fast delivery and excellent customer service. My go-to store for books!"</p>
+       </div>
+   </div>
+   <div class="col-md-4">
+       <div class="card p-3 shadow-sm">
+           <div class="d-flex align-items-center mb-3">
+               <i class="fas fa-user-circle fa-2x text-warning me-3"></i>
+               <h6 class="mb-0">Sarah K.</h6>
+           </div>
+           <p>"I found every book I was looking for and more. A wonderful shopping experience."</p>
+       </div>
+   </div>
+</div>
+</section>  
+
+<section id="contact" class="container my-5 border border-muted">
+  <h2 class="text-center m-4">Contact Us</h2>
+  <form class="row g-3">
+      <div class="col-md-6">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="col-12">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" required></textarea>
+      </div>
+      <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary m-3">Send Message</button>
+      </div>
+  </form>
+</section>
+
+<section class="terms-section container my-5">
+  <h2 class="text-center mb-4">Terms and Conditions</h2>
+  <p>By accessing and using our website, you agree to comply with the following terms and conditions. We reserve the right to update these terms at anytime without prior notice. All content on this website is for informational purposes only and is subject to change. We are not responsible for any inaccuracies or typographical errors.</p>
+  <ul>
+      <li>All purchases are subject to availability.</li>
+      <li>Prices are subject to change without notice.</li>
+      <li>Returns and exchanges are accepted within 14 days with a valid receipt.</li>
+      <li>Unauthorized use of this website may result in legal action.</li>
+      <li>We value your privacy and protect your personal data according to our privacy policy.</li>
+  </ul>
+</section>
+
+<footer class="bg-dark text-white py-4 mt-5">
+  <div class="container">
+      <div class="row text-center text-md-start">
+          <div class="col-md-4 mb-3">
+              <h5>About BookStore</h5>
+              <p>Your one-stop destination for thousands of books across all genres. We aim to nurture learning, imagination, and discovery for readers of all ages.</p>
+          </div>
+          <div class="col-md-4 mb-3">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                  <li><a href="homepage.html" class="text-white text-decoration-none"><i class="fas fa-home me-1"></i>Home</a></li>
+                  <li><a href="products.html" class="text-white text-decoration-none"><i class="fas fa-book me-1"></i>Products</a></li>
+                  <li><a href="homepage.html#contact" class="text-white text-decoration-none"><i class="fas fa-envelope me-1"></i>Contact Us</a></li>
+                  <li><a href="#cart" class="text-white text-decoration-none"><i class="fas fa-shopping-cart me-1"></i>Your Cart</a></li>
+              </ul>
+          </div>
+          <div class="col-md-4 mb-3">
+           <h5>Contact Info</h5>
+           <p><i class="fas fa-map-marker-alt me-2"></i>123 Villasis, Pangasinan, PH</p>
+           <p><i class="fas fa-phone me-2"></i>+63 912 345 6789</p>
+           <p><i class="fas fa-envelope me-2"></i>support@bookstore.com</p>
+           <div class="mt-3">
+               <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+               <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+               <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+               <a href="#" class="text-white"><i class="fab fa-linkedin fa-lg"></i></a>
+           </div>
+       </div>
+   </div>
+   <div class="text-center mt-3">
+       <hr>
+       <p class="mb-0">&copy; 2025 BookStore. Crafted with ❤️ for book lovers. All rights reserved.</p>
+   </div>
+</div>
+</footer>
+
+</body>
+</html>

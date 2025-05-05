@@ -1,0 +1,90 @@
+body {
+    font-family: 'Lora', serif;
+}
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bookstore_background.jpg') no-repeat center center/cover;
+    height: 80vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.hero-slide {
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+.hero-section h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+.card {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border: none;
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.feature-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+.testimonial-section {
+    padding: 60px 0;
+}
+.terms-section {
+    padding: 60px 20px;
+    background-color: #f1f1f1;
+}
+.btn-custom-add {
+    background-color: #6f42c1;
+    color: #fff;
+    border: none;
+    transition: 0.3s;
+}
+.btn-custom-add:hover {
+    background-color: #5936a8;
+    color: #fff;
+}
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+footer p, footer a, footer h5 {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #0d6efd;
+}

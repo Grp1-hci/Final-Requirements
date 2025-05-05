@@ -1,0 +1,75 @@
+body {
+    font-family: 'Lora', serif;
+    background-color: #f4f6f8;
+}
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.product-header {
+    background: linear-gradient(135deg, #4b3b59, #5c5967);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 73px;
+}
+.product-header h1 {
+    font-size: 3.2rem;
+    margin-bottom: 10px;
+}
+.product-card {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+    overflow: hidden;
+}
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+.product-card img {
+    height: 200px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product-card-body {
+    flex: 1;
+}
+.product-card-body h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.08);
+}
+
+.btn-primary {
+    background-color: #6c4ec3;
+    border-color: #6c4ec3;
+}
+
+.btn-primary:hover {
+    background-color: #5a3db4;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #f1f1f1;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 80px;
+}
